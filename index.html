@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biocedent MedTech</title>
+  <meta name="description" content="Biocedent MedTech">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%234A4A4A' stroke-width='12'%3E%3Cpath d='M97.3 78 L123.1 93 L149 78 L149 48.1 L123.1 33.1 L97.3 48.1 Z'/%3E%3Cpath d='M123.1 93 V122.9 L149 137.8 V167.8'/%3E%3C/g%3E%3Cg fill='%234A4A4A'%3E%3Cpath d='M97.3 48.1 L68.8 38.8 L51.2 63 L68.8 87.2 L97.3 78 Z'/%3E%3Ccircle cx='149' cy='170' r='11'/%3E%3Ccircle cx='78' cy='140' r='8'/%3E%3C/g%3E%3C/svg%3E">
+  <!--
+    Fonts: Michroma (Copyright 2011 The Michroma Project Authors) and
+    Rajdhani (Copyright (c) 2014, Indian Type Foundry), both licensed under
+    the SIL Open Font License 1.1 — https://openfontlicense.org
+  -->
+  <style>
+    @font-face {
+      font-family: 'Michroma';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('fonts/michroma-latin.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Rajdhani';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url('fonts/rajdhani-600-latin.woff2') format('woff2');
+    }
+
+    :root {
+      --bg: #FFFFFF;
+      --ink: #2E2E2E;
+      --mark: #4A4A4A;
+      --muted: #8A8A8A;
+      --rule: #D9D9D9;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body { height: 100%; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Rajdhani', 'Arial Narrow', sans-serif;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      padding: 40px 16px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 32px;
+    }
+
+    .lockup {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .lockup svg {
+      width: 112px;
+      height: 112px;
+      flex: none;
+      color: var(--mark);
+    }
+
+    .wordmark {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .wordmark .name {
+      font-family: 'Michroma', 'Eurostile', 'Arial Black', sans-serif;
+      font-weight: 400;
+      font-size: 40px;
+      letter-spacing: 0.06em;
+      line-height: 1;
+      color: var(--ink);
+    }
+
+    .wordmark .bar {
+      height: 3px;
+      background: var(--mark);
+    }
+
+    .wordmark .sub {
+      display: flex;
+      justify-content: space-between;
+      font-size: 24px;
+      line-height: 1;
+      color: var(--mark);
+    }
+
+    .message .kicker {
+      font-size: 14px;
+      letter-spacing: 0.4em;
+      /* offset trailing letter-spacing so the text centers optically */
+      margin-right: -0.4em;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      letter-spacing: 0.3em;
+      color: var(--muted);
+      padding-top: 24px;
+      border-top: 1px solid var(--rule);
+      max-width: 520px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 560px) {
+      main { gap: 28px; }
+      .lockup { flex-direction: column; gap: 20px; }
+      .lockup svg { width: 88px; height: 88px; }
+      .wordmark .name { font-size: 28px; }
+      .wordmark .sub { font-size: 18px; }
+      .message .kicker { font-size: 12px; letter-spacing: 0.3em; margin-right: -0.3em; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="lockup">
+      <svg viewBox="0 0 200 200" role="img" aria-label="Biocedent MedTech mark">
+        <path d="M97.3 78 L123.1 93 L149 78 L149 48.1 L123.1 33.1 L97.3 48.1 Z" fill="none" stroke="currentColor" stroke-width="12" stroke-linejoin="miter"/>
+        <path d="M97.3 48.1 L68.8 38.8 L51.2 63 L68.8 87.2 L97.3 78 Z" fill="currentColor"/>
+        <path d="M123.1 93 V122.9 L149 137.8 V167.8" fill="none" stroke="currentColor" stroke-width="12" stroke-linejoin="miter"/>
+        <circle cx="149" cy="170" r="11" fill="currentColor"/>
+        <circle cx="78" cy="140" r="8" fill="currentColor"/>
+      </svg>
+      <div class="wordmark">
+        <h1 class="name">BIOCEDENT</h1>
+        <div class="bar" aria-hidden="true"></div>
+        <div class="sub" aria-label="MedTech"><span>M</span><span>E</span><span>D</span><span>T</span><span>E</span><span>C</span><span>H</span></div>
+      </div>
+    </div>
+
+    <div class="message">
+      <span class="kicker">IN DEVELOPMENT</span>
+    </div>
+  </main>
+
+  <footer>&copy; <span id="year">2026</span> BIOCEDENT GROUP</footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
